@@ -157,11 +157,11 @@ class AppTest {
 	   int resultId = gm.getId();
 	   gm.setArea(b);
 	   double resultArea = gm.getArea();
-	   String resultString = gm.getNom();
+	   String resultNombre = gm.getNom();
 	   String resultToString = gm.toString();
 	   assertEquals(a, resultId);
 	   assertEquals(b, resultArea);
-	   assertEquals(c, resultString);
+	   assertEquals(c, resultNombre);
 	   assertEquals(d, resultToString);
 	}
 	
@@ -185,10 +185,10 @@ class AppTest {
 	   gm.setId(a);
 	   int resultId = gm.getId();
 	   gm.setNom(b);
-	   String resultString = gm.getNom();
+	   String resultNombre = gm.getNom();
 	   String resultFigura = gm.figura(9);
 	   assertEquals(a, resultId);
-	   assertEquals(b, resultString);
+	   assertEquals(b, resultNombre);
 	   assertEquals("Default", resultFigura);
 	}
 	
